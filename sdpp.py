@@ -25,10 +25,10 @@ with col2:
         content = st.text_area("Generated Content", st.session_state.text, height=300)
 
         st.download_button(
-            label="⬇️ Download as TXT",
+            label="⬇️ Download as Image",
             data=content,
-            file_name="marketing_copy.txt",
-            mime="text/plain"
+            file_name="marketing_copy.png",
+            mime="png/plain"
         )
     else:
         st.info("Generate content first")
